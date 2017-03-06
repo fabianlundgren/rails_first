@@ -24,3 +24,4 @@ module RailsFirst
     generate.controller_specs false
   end
 end
+end
