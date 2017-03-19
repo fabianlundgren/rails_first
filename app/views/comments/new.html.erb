@@ -1,0 +1,10 @@
+<h2><%=@article.title %></h2>
+<p><%=@article.content %></p>
+
+<%= form_for [@article, @comments] do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %> <br />
+  <%= f.label :comment %>
+  <%= f.text_field :comment %><br />
+  <%= f.submit 'Submit' %>
+<% end %>
