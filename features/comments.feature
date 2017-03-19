@@ -13,8 +13,8 @@ Scenario:
   And I shouldn't see "A breaking news item comments"
   When I click "Add a comment"
   #Then show me the page
-  And I fill in email with "random@email.com"
-  And I fill in comment with "Random comment"
+  And I fill in "Email" with "random@email.com"
+  And I fill in "Comment" with "Random comment"
   And I click "Submit"
   Then I should see "A breaking news item comments"
   And I should see "random@email.com"

@@ -12,10 +12,6 @@ When(/^I click "([^"]*)"$/) do |button|
   click_link_or_button
 end
 
-When(/^I fill in email with "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When(/^I fill in comment with "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
+  fill_in(field, with: value)
 end
