@@ -10,9 +10,10 @@ RSpec.describe Comment, type: :model do
     it { is_expected.to belong_to :article }
   end
 
-  describe 'Validations' do
-    it { is_expected.to validate_presence_of :comment }
-  end
+   describe 'Validations' do
+     it { is_expected.to validate_presence_of :email }
+     it { is_expected.to validate_presence_of :comment }
+   end
 
   describe 'Comment Factory' do
     it 'should have valid Factory' do

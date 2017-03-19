@@ -12,6 +12,7 @@ Scenario:
   Then I should see "A breaking news item"
   And I shouldn't see "A breaking news item comments"
   When I click "Add a comment"
+  # Then I should see "A breaking news item comment" page
   #Then show me the page
   And I fill in "Email" with "random@email.com"
   And I fill in "Comment" with "Random comment"
