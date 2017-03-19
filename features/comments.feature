@@ -11,8 +11,7 @@ Scenario:
   Given I am on the landing page
   Then I should see "A breaking news item"
   And I click "A breaking news item"
-  Then show me the page
-  # Then I should see "A breaking news item comment" page
+  #Then show me the page
   And I fill in "Email" with "random@email.com"
   And I fill in "Comment" with "Random comment"
   And I click "Submit"
