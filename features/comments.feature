@@ -18,4 +18,3 @@ Scenario:
   And I click "Submit"
   Then I should see "A breaking news item comments"
   And I should see "random@email.com"
-  

@@ -4,5 +4,7 @@
       <%= article.title %><br />
       <%= article.content %>
     </li>
+
+    <%= link_to article.title , article_path(article) %>
   <% end %>
 </ul>
