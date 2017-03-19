@@ -1,6 +1,6 @@
 <h2>New comment for <%= @article.title %></h2>
 
-<%= form_for [@article, @comment] do |f| %>
+<%= form_for [@article, @comments] do |f| %>
   <%= f.label :email %>
   <%= f.text_field :email %>
   <%= f.label :comment %>

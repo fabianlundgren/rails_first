@@ -1,10 +1,12 @@
 <ul>
   <% @articles.each do |article| %>
-    <li>
-      <%= article.title %><br />
-      <%= article.content %>
-    </li>
+  <li>
+    <h2><%= link_to article.title, article_path(article) %><br /></h2>
+    <%= article.content %>
+  </li>
 
-    <%= link_to article.title , article_path(article) %>
+
+
+
   <% end %>
 </ul>

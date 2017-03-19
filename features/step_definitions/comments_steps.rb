@@ -17,10 +17,10 @@ end
 #   expect(page.current_path).to eq article_path(article)
 # end
 
-# Then(/^show me the page$/) do
-#   save_and_open_page
-# end
+Then(/^show me the page$/) do
+  save_and_open_page
+end
 
 When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
-  fill_in(field, :with => value)
+  fill_in field, with: value
 end
